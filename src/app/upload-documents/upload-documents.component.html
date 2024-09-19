@@ -1,0 +1,20 @@
+<div class="upload-container">
+    <div class="upload-area">
+      <div class="upload-cloud">
+        <input type="file" id="fileInput" (change)="onFileSelected($event)" accept=".pdf" multiple hidden />
+        <button (click)="openFileSelector()">Upload Files</button>
+      </div>
+    </div>
+  
+    <div class="actions">
+      <button class="btn cancel" (click)="clearFiles()">Cancel</button>
+      <button class="btn accept" (click)="acceptFiles()">Accept</button>
+    </div>
+  
+    <div class="pdf-previews">
+      <div *ngFor="let pdfUrl of pdfUrls">
+        <iframe [src]="pdfUrl" width="100%" height="700px"></iframe>
+      </div>
+    </div>
+  </div>
+  

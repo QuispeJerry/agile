@@ -1,0 +1,87 @@
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+    background-color: #f4f4f4;
+    padding: 10px;
+  }
+  
+  .chat-window {
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+  }
+  
+  .user-message, .bot-message {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 60%;
+    word-wrap: break-word;
+    clear: both; /* Evita que los elementos floten uno sobre el otro */
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .user-message {
+    background-color: #81C785;
+    align-self: flex-end; /* Alinea a la derecha */
+    float: right; /* Flota a la derecha */
+  }
+  
+  .bot-message {
+    background-color: #70B2E2;
+    align-self: flex-start; /* Alinea a la izquierda */
+    float: left; /* Flota a la izquierda */
+  }
+  
+  .input-area {
+    display: flex;
+    width: 80%;
+    background-color: #F2F0CE;
+    border-radius: 20px;
+    padding: 10px;
+    align-items: center;
+  }
+  
+  input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button img {
+    width: 25px;
+  }
+  
+  .ion--send {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%23000000' d='m476.59 227.05l-.16-.07L49.35 49.84A23.56 23.56 0 0 0 27.14 52A24.65 24.65 0 0 0 16 72.59v113.29a24 24 0 0 0 19.52 23.57l232.93 43.07a4 4 0 0 1 0 7.86L35.53 303.45A24 24 0 0 0 16 327v113.31A23.57 23.57 0 0 0 26.59 460a23.94 23.94 0 0 0 13.22 4a24.55 24.55 0 0 0 9.52-1.93L476.4 285.94l.19-.09a32 32 0 0 0 0-58.8'/%3E%3C/svg%3E");
+  }

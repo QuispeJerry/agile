@@ -1,0 +1,31 @@
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.caja1, .caja2 {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.caja1 {
+    background-color: #0CB1F2;
+    padding: 40px 100px;
+    margin-bottom: 20px;
+}
+
+.caja2 {
+    background-color: #F28F38;
+    padding: 20px 60px;
+}
